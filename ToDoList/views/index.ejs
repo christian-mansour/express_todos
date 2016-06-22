@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1>My To Do List</h1>
+
+    <ul>
+  <% key.forEach(function(item){ %>
+    <li><%= item %></li>
+  <% }); %>
+    </ul>
+    <form action='/items/new' method='post'>
+    <value> Something I Need to Do: </value><input type='text'>
+    <input type='button' value='Submit Item to List!'>
+  </body>
+</html>
